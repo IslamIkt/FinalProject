@@ -1,0 +1,124 @@
+@import "./reset.css";
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: min(100%-30px, 1080);
+    margin-inline: auto;
+}
+
+/*------------------*/
+/*------header------*/
+/*------------------*/
+
+header{
+    height: 72px;
+    background-color: #e63946;
+    line-height: 72px;
+}
+
+.flexbox{
+    display: flex;
+}
+
+h1{
+    width: 40% ;
+}
+
+.page-links{
+    width: 40%;
+    text-align: right;
+    list-style: none
+}
+
+.page-links li:hover{
+    color: #457b9d;
+    transition: all .2s;
+}
+
+.page-links li + li{
+    margin-left: 30px;
+}
+
+.pfp{
+    width: 20%;
+}
+
+.pfp-btn{
+    background-image: url('../img/pfp.jpg');
+    background-size: 50px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin-top: 11px;
+    margin-left: 83px;
+}
+
+
+/*------------------*/
+/*-------main-------*/
+/*------------------*/
+
+main{
+    width: 100%;
+    min-height: calc(100vh - 72px);
+    background-color: #f1faee;
+    padding: 30px;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    padding: 20px;
+    height: 100%;
+}
+
+.accname{
+    text-align: center;
+}
+
+.feed{
+    width: 50%;
+    height: 100%;
+}
+
+.account, .suggestions{
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.followers, .following{
+    width: 50%;
+    text-align: center;
+}
+
+.following :first-child, .followers :first-child{
+    font-size: 16px;
+}
+
+.feedbox{
+    background-color: #fff;
+    border-radius: 5px;
+    height: 150px;
+    padding: 20px;
+}
+
+.feedbox p{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.big{
+    width:80px;
+    height:80px;
+    border-radius: 50px;
+    margin-left: calc(50% - 40px);
+}
